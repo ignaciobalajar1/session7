@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torneo - Register Form</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="./media/131999-751915336_medium.mp4" type="video/mp4" />
+    </video>
+
+    <header>
+      <h1>Inscripción al Torneo</h1>
+    </header>
+    <main>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre" class="is-required">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="is-required">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="edad" class="is-required">Edad</label>
+          <input type="number" id="edad" name="edad" min="1" max="120" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nickname" class="is-required">Nombre del jugador (nickname)</label>
+          <input type="text" id="nickname" name="nickname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="is-required">Contraseña de la cuenta</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="juego" class="is-required">Videojuego del torneo</label>
+          <select id="juego" name="juego" required>
+            <option value="">Selecciona un juego</option>
+            <option value="valorant">Valorant</option>
+            <option value="fc25">EA Sports FC</option>
+            <option value="league">League of Legends</option>
+            <option value="fortnite">Fortnite</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Plataforma</label>
+          <input type="radio" id="pc" name="plataforma" value="pc" />
+          <label for="pc" class="inline">PC</label>
+          <input type="radio" id="play" name="plataforma" value="playstation" />
+          <label for="play" class="inline">PlayStation</label>
+          <input type="radio" id="xbox" name="plataforma" value="xbox" />
+          <label for="xbox" class="inline">Xbox</label>
+        </div>
+
+        <div class="form-group">
+          <label>Disponibilidad horaria</label>
+          <input type="checkbox" id="mañana" name="horario" value="mañana" />
+          <label for="mañana" class="inline">Mañana</label>
+          <input type="checkbox" id="tarde" name="horario" value="tarde" />
+          <label for="tarde" class="inline">Tarde</label>
+          <input type="checkbox" id="noche" name="horario" value="noche" />
+          <label for="noche" class="inline">Noche</label>
+        </div>
+
+        <div class="form-group">
+          <label for="fnac">Fecha de nacimiento</label>
+          <input type="date" id="fnac" name="fnac" />
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Comentarios adicionales</label>
+          <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms" class="inline is-required">Acepto las <a href="#" target="_blank">normas del torneo</a></label>
+        </div>
+
+        <button type="submit" class="btn">Inscribirse</button>
+      </form>
+    </main>
+  </body>
+</html>
